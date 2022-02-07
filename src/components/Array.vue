@@ -1,9 +1,15 @@
 <template>
   <div>
-<h2>Get data</h2>
-<button @click="get">Load data</button>
+    <h1>Get data</h1>
+    <button @click="fetch">Fetch</button>
+    <button @click="filter">Filter Data</button>
+    <h1>no of id in array - {{testArray.length}}</h1>
+    <h3>
+      [<h3 v-for="data in testArray" :key="data">{id: {{ data }}},</h3>]
+    </h3>
   </div>
 </template>
+
 <script>
 import axios from "axios";
 import { ref } from "vue";
@@ -41,7 +47,6 @@ export default {
         });
       }
     };
-
     return {
       fetch,
       filter,
