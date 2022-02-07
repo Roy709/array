@@ -20,7 +20,7 @@ export default {
     let fetch = () => {
       console.log("success");
       axios
-        .get("/treejson.txt")
+        .get("/tree json.txt")
         .then((res) => {
           console.log(res.data);
           arrayData.value = res.data;
