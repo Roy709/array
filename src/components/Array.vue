@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Get data</h1>
-    <button @click="fetch">Fetch</button>
+    <button @click="fetch">Load</button>
     <button @click="filter">Filter Data</button>
     <h1>no of id in array - {{testArray.length}}</h1>
     <h3>
