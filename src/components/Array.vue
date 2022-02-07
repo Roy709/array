@@ -18,7 +18,7 @@ export default {
     let arrayData = ref();
     let testArray = ref([]);
     let fetch = () => {
-      console.log("success");
+      console.log("Fetched");
       axios
         .get("/tree json.txt")
         .then((res) => {
